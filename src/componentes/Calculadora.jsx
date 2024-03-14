@@ -28,8 +28,8 @@ export const Calucladora = () => {
             ))}
             </div>
             <div className='operaciones'>
-            {operacion.map((op, i) => (
-                <div onClick={() => addToInput(op)} key={i} id={op}>{op}</div>
+            {operacion.map(op => (
+                <div onClick={() => addToInput(op)} key={op} id={op}>{op}</div>
             ))}
             <div onClick={() => calculateResult()}>=</div>
             <div onClick={() => clearInput()}>C</div>
